@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /* align-items: ; */
 }
 
 div#alerts {
@@ -47,10 +46,122 @@ div#alerts {
   font-weight: normal;
 }
 
-/* .header-nav__group > .header-nav__link {
+.tabbed-nav__container {
+  background-color:	#f4f5f7;
+}
+
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen (min-width:500) {
+  .tabbed-nav__group {
+    border-bottom: 1px solid #dfe1e6;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen (max-width:500) {
+  .tabbed-nav__group {
+    border-bottom: 1px solid #dfe1e6;
+    display: block;
+    justify-content: center;
+  }
+
+  .tabbed-nav__link {
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    border-bottom: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0 5px;
+    color: #172b4d;
+    display: block;
+  }
+}
+
+.boards__container {
+  margin: auto;
+  padding: 32px;
+  max-width: 1400px;
   display: flex;
   flex-direction: row;
-} */
+  flex-flow: row wrap;
+}
+
+.boards__sidebar {
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex-basis: 220px;
+}
+
+.boards__sidebar-content > .title {
+  color: white;
+}
+
+.boards__sidebar-content > a {
+  color: white;
+}
+
+.boards__sidebar-content > .description {
+  color: lightblue;
+}
+
+.boards__group {
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen (min-width:750px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+  }
+}
+
 
 /* Supplied CSS follows. */
 .header-nav__button {
